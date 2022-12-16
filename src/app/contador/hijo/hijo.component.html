@@ -1,1 +1,16 @@
-<p>hijo works!</p>
+<h3>Contador</h3>
+<h4>{{contador}}</h4>
+
+<div class="row">
+    <div>
+        <button (click)="multiplicar()" class="waves-effect waves-light btn grey darken-3 pr-5">Multiplicar</button>
+    <button (click)="dividir()" class="waves-effect waves-light btn grey darken-3">Dividir</button>
+    </div>
+</div>
+
+<hr>
+<div class="row center-align">
+    <div>
+        <app-nieto [contador] = "contador" (cambioContador)="resetNieto($event) "></app-nieto>
+    </div>
+</div>
